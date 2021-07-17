@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header -->
+  <%- include('./partials/header'); %>
+
+  <body class="d-flex">
+    <div
+      class="py-5 px-3 mx-auto text-center"
+      style="width: 100%; max-width: 330px"
+    >
+      <h1>Silahkan Masuk di Foodnesia</h1>
+      <br />
+      <form action="/login" method="POST">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="registerUsername"
+            name="username"
+            placeholder="username"
+          />
+          <label for="username">Nama Pengguna</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input
+            type="password"
+            class="form-control"
+            id="registerPassword"
+            name="password"
+            placeholder="password"
+          />
+          <label for="password">Kata Sandi</label>
+        </div>
+        <button type="submit" class="w-100 btn btn-lg btn-primary">
+          Masuk
+        </button>
+      </form>
+      <br />
+      <hr />
+      <p>
+        <a href="/register" class="text-decoration-none fw-bold">Daftar</a>
+      </p>
+    </div>
+  </body>
+</html>
